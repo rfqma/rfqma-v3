@@ -1,112 +1,277 @@
-import Image from "next/image";
+import { Avatar } from "@nextui-org/avatar";
+import { Chip } from "@nextui-org/chip";
+import { MapPin, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Instagram, Youtube, Mails } from "lucide-react";
+import { CgPexels } from "react-icons/cg";
+import { Link } from "@nextui-org/link";
+import { Linner, LinnerTime } from "linner";
+import IconCloud from "@/components/magicui/icon-cloud";
+import BlurIn from "@/components/magicui/blur-in";
+import TypingAnimation from "@/components/magicui/typing-animation";
+import { CoolMode } from "@/components/magicui/cool-mode";
+import { Snippet } from "@nextui-org/snippet";
 
 export default function Home() {
+  const socials = [
+    {
+      name: "rifqimaulanax@gmail.com",
+      path: "https://mail.google.com/mail/?view=cm&fs=1&to=rifqimaulanax@gmail.com",
+      target: "_blank",
+      disabled: false,
+      icon: Mails,
+    },
+    {
+      name: "GitHub",
+      path: "https://github.com/rfqma",
+      target: "_blank",
+      disabled: false,
+      icon: Github,
+    },
+    {
+      name: "LinkedIn",
+      path: "https://www.linkedin.com/in/rfqma",
+      target: "_blank",
+      disabled: false,
+      icon: Linkedin,
+    },
+    {
+      name: "Instagram",
+      path: "https://instagram.com/maruarchive",
+      target: "_blank",
+      disabled: false,
+      icon: Instagram,
+    },
+    {
+      name: "Pexels",
+      path: "https://www.pexels.com/@rifqi-maulana-286675026/",
+      target: "_blank",
+      disabled: false,
+      icon: CgPexels,
+    },
+    {
+      name: "YouTube",
+      path: "https://www.youtube.com/@maruarchive",
+      target: "_blank",
+      disabled: false,
+      icon: Youtube,
+    },
+  ];
+
+  const times = [
+    {
+      title: "Oetama Solutions",
+      description: "Fullstack Developer",
+      date: {
+        from: "mar 2024",
+        to: "present",
+      },
+      iconVariant: "PlusIcon",
+    },
+    {
+      title: "Self Employed",
+      description: "Freelance Fullstack Developer",
+      date: {
+        from: "may 2024",
+        to: "present",
+      },
+      iconVariant: "PlusIcon",
+    },
+    {
+      title: "Self Employed",
+      description: "Freelance Photographer & Videographer",
+      date: {
+        from: "jan 2024",
+        to: "present",
+      },
+      iconVariant: "PlusIcon",
+    },
+    {
+      title: "PT. Angkasa Pura I, Yogyakarta International Airport",
+      description: "Intern at Airport Quality Management Unit",
+      date: {
+        from: "jul 2023",
+        to: "sep 2023",
+      },
+      iconVariant: "CheckedIcon",
+    },
+    {
+      title: "Techave Dev",
+      description: "Front-End Developer",
+      date: {
+        from: "apr 2023",
+        to: "apr 2023",
+      },
+      iconVariant: "CheckedIcon",
+    },
+    {
+      title: "Mora Studio",
+      description: "Photographer & Videographer",
+      date: {
+        from: "dec 2020",
+        to: "nov 2021",
+      },
+      iconVariant: "CheckedIcon",
+    },
+  ];
+
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "docker",
+    "git",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "figma",
+    "tailwindcss",
+    "adobepremierepro",
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <main className="flex min-h-screen flex-col items-center py-24 px-10">
+      <div className="flex flex-col max-w-2xl w-full">
+        <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between sm:items-center">
+          <CoolMode>
+            <Avatar
+              src="/images/rifqimaulana-headshot.png"
+              className="w-28 h-28 text-large flex sm:hidden cursor-pointer"
+              isBordered
+              radius="full"
+              color="success"
             />
-          </a>
+          </CoolMode>
+          <div className="flex flex-col">
+            <BlurIn
+              word="Rifqi Maulana"
+              className="text-4xl sm:text-6xl font-bold text-black dark:text-white"
+            />
+
+            <TypingAnimation
+              className="text-base font-normal text-start"
+              text="CS Student / Fullstack Developer / Photographer"
+              duration={50}
+            />
+
+            <div className="flex flex-col mt-2 gap-2">
+              <Chip
+                startContent={<MapPin size={18} />}
+                variant="flat"
+                color="success"
+                size="sm"
+              >
+                Yogyakarta, Indonesia
+              </Chip>
+              <Link href="#socials">
+                <Chip
+                  variant="dot"
+                  color="success"
+                  size="sm"
+                  endContent={<ChevronDown size={12} color="gray" />}
+                >
+                  available for new projects
+                </Chip>
+              </Link>
+            </div>
+          </div>
+          <CoolMode>
+            <Avatar
+              src="/images/rifqimaulana-headshot.png"
+              className="w-28 h-28 text-large hidden sm:flex cursor-pointer"
+              isBordered
+              radius="full"
+              color="success"
+            />
+          </CoolMode>
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-bold mt-8">who am i?</h2>
+          <p className="mt-4">
+            I'm a 21 years old who passionate about photography, videography,
+            and computer related stuff. I am an ambitious student pursuing a
+            degree on computer science at Universitas Pembangunan Nasional
+            Veteran Yogyakarta. Alongside my studies, I actively engage in
+            freelance work, utilizing my skills and creativity to capture
+            unforgettable moments through photography and videography. With a
+            strong technical background and a deep appreciation for visual
+            storytelling, I bring a unique blend of expertise to every project.
+            Combining my passion for technology and the arts, I am dedicated to
+            delivering exceptional visual content that resonates with audiences.
+            Let's connect and explore the power of visuals together.
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <div className="flex flex-col" id="socials">
+          <h2 className="text-2xl font-bold mt-8">
+            still 'who am i?' but cli-based
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <Link href="https://www.npmjs.com/package/card-flex" target="_blank">
+            <Chip
+              variant="flat"
+              color="secondary"
+              size="sm"
+              className="mb-1 mt-2"
+            >
+              card-flex by @depapp
+            </Chip>
+          </Link>
+          <Snippet size="sm" variant="flat" color="default">
+            npx rfqma
+          </Snippet>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <div>
+          <h2 className="text-2xl font-bold mt-8">
+            interested in working with me?
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          <span>reach me through my socials</span>
+          {socials.map((item, index) => (
+            <Link
+              key={index}
+              href={item.path}
+              target={item.target}
+              className="flex items-center gap-2 mt-4"
+              color="secondary"
+            >
+              <item.icon size={20} />
+              <span>{item.name}</span>
+            </Link>
+          ))}
+        </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div>
+          <h2 className="text-2xl font-bold mt-8">experiences</h2>
+          <span>quick summary of my most recent experiences</span>
+          <Linner className="mt-4">
+            {times.map((time) => (
+              <LinnerTime key={time.title} variant="default" {...time} />
+            ))}
+          </Linner>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mt-8">skills</h2>
+          <span>tools or technologies i usually use</span>
+          <div className="relative flex h-full w-full max-w-4xl items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+            <IconCloud iconSlugs={slugs} />
+          </div>
+        </div>
       </div>
     </main>
   );
