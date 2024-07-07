@@ -11,6 +11,21 @@ import TypingAnimation from "@/components/magicui/typing-animation";
 import { CoolMode } from "@/components/magicui/cool-mode";
 import { Snippet } from "@nextui-org/snippet";
 
+interface TimeProps {
+  title: string;
+  description: string;
+  date: {
+    from: string;
+    to: string;
+  };
+  iconVariant:
+    | "PlusIcon"
+    | "CheckedIcon"
+    | "BlankIcon"
+    | "CalendarIcon"
+    | "XIcon";
+}
+
 export default function Home() {
   const socials = [
     {
@@ -57,7 +72,7 @@ export default function Home() {
     },
   ];
 
-  const times = [
+  const times: TimeProps[] = [
     {
       title: "Oetama Solutions",
       description: "Fullstack Developer",
@@ -203,23 +218,23 @@ export default function Home() {
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold mt-8">who am i?</h2>
           <p className="mt-4">
-            I'm a 21 years old who passionate about photography, videography,
-            and computer related stuff. I am an ambitious student pursuing a
-            degree on computer science at Universitas Pembangunan Nasional
-            Veteran Yogyakarta. Alongside my studies, I actively engage in
-            freelance work, utilizing my skills and creativity to capture
+            I&apos;m a 21 years old who passionate about photography,
+            videography, and computer related stuff. I am an ambitious student
+            pursuing a degree on computer science at Universitas Pembangunan
+            Nasional Veteran Yogyakarta. Alongside my studies, I actively engage
+            in freelance work, utilizing my skills and creativity to capture
             unforgettable moments through photography and videography. With a
             strong technical background and a deep appreciation for visual
             storytelling, I bring a unique blend of expertise to every project.
             Combining my passion for technology and the arts, I am dedicated to
             delivering exceptional visual content that resonates with audiences.
-            Let's connect and explore the power of visuals together.
+            Let&apos;s connect and explore the power of visuals together.
           </p>
         </div>
 
         <div className="flex flex-col" id="socials">
           <h2 className="text-2xl font-bold mt-8">
-            still 'who am i?' but cli-based
+            still &apos;who am i?&apos; but cli-based
           </h2>
           <Link href="https://www.npmjs.com/package/card-flex" target="_blank">
             <Chip
