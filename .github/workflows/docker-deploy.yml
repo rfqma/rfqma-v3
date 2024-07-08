@@ -34,9 +34,9 @@ jobs:
         with:
           host: ${{secrets.REMOTE_SSH_HOST}}
           username: ${{secrets.REMOTE_SSH_USER}}
-          key: ${{secrets.REMOTE_SSH_KEY}}
+          key: ${{secrets.REMOTE_SSH_PRIVATE_KEY}}
           port: 22
           script: |
-            cd ${{ secrets.REMOTE_WORK_DIR }}
+            cd ${{ secrets.REMOTE_WORKING_DIR }}
             docker-compose pull
             docker-compose up -d
