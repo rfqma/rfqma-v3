@@ -31,8 +31,31 @@ const ubuntuMono = Ubuntu_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'rfqma',
+  metadataBase: new URL('https://rfqma.xyz'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
+  title: {
+    template: 'rfqma | %s',
+    default: 'rfqma',
+  },
   description: 'fullstack developer, photography and videography enthusiast.',
+  applicationName: 'rfqma-v3',
+  referrer: 'origin-when-cross-origin',
+  keywords: [
+    'rfqma',
+    'rifqi maulana',
+    'fullstack',
+    'developer',
+    'photography',
+    'videography',
+  ],
+  authors: [{ name: 'Rifqi Maulana', url: 'https://github.com/rfqma' }],
+  creator: 'Rifqi Maulana',
+  publisher: 'Rifqi Maulana',
 };
 
 export default function RootLayout({
