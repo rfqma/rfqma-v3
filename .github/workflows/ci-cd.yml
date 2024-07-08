@@ -1,0 +1,32 @@
+name: continuous integration and continuous deployment vps
+
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # fetch all history for git describe to work / for all branches and tags
+
+      - name: use node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.11.1'
+
+      - name: install dependencies
+        run: npm install
+
+      - name: run lint
+        run: npm run lint
+
+      - name: run format check
+        run: npm run format
+
+      - name: build docker image
+        run: docker build -t rfqma-v3:1.0 .
