@@ -1,15 +1,15 @@
-import { Avatar } from "@nextui-org/avatar";
-import { Chip } from "@nextui-org/chip";
-import { MapPin, ChevronDown } from "lucide-react";
-import { Github, Linkedin, Instagram, Youtube, Mails } from "lucide-react";
-import { CgPexels } from "react-icons/cg";
-import { Link } from "@nextui-org/link";
-import { Linner, LinnerTime } from "linner";
-import IconCloud from "@/components/magicui/icon-cloud";
-import BlurIn from "@/components/magicui/blur-in";
-import TypingAnimation from "@/components/magicui/typing-animation";
-import { CoolMode } from "@/components/magicui/cool-mode";
-import { Snippet } from "@nextui-org/snippet";
+import { Avatar } from '@nextui-org/avatar';
+import { Chip } from '@nextui-org/chip';
+import { MapPin, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Instagram, Youtube, Mails } from 'lucide-react';
+import { CgPexels } from 'react-icons/cg';
+import { Link } from '@nextui-org/link';
+import { Linner, LinnerTime } from 'linner';
+import IconCloud from '@/components/magicui/icon-cloud';
+import BlurIn from '@/components/magicui/blur-in';
+import TypingAnimation from '@/components/magicui/typing-animation';
+import { CoolMode } from '@/components/magicui/cool-mode';
+import { Snippet } from '@nextui-org/snippet';
 
 interface TimeProps {
   title: string;
@@ -19,54 +19,54 @@ interface TimeProps {
     to: string;
   };
   iconVariant:
-    | "PlusIcon"
-    | "CheckedIcon"
-    | "BlankIcon"
-    | "CalendarIcon"
-    | "XIcon";
+    | 'PlusIcon'
+    | 'CheckedIcon'
+    | 'BlankIcon'
+    | 'CalendarIcon'
+    | 'XIcon';
 }
 
 export default function Home() {
   const socials = [
     {
-      name: "rifqimaulanax@gmail.com",
-      path: "https://mail.google.com/mail/?view=cm&fs=1&to=rifqimaulanax@gmail.com",
-      target: "_blank",
+      name: 'rifqimaulanax@gmail.com',
+      path: 'https://mail.google.com/mail/?view=cm&fs=1&to=rifqimaulanax@gmail.com',
+      target: '_blank',
       disabled: false,
       icon: Mails,
     },
     {
-      name: "GitHub",
-      path: "https://github.com/rfqma",
-      target: "_blank",
+      name: 'GitHub',
+      path: 'https://github.com/rfqma',
+      target: '_blank',
       disabled: false,
       icon: Github,
     },
     {
-      name: "LinkedIn",
-      path: "https://www.linkedin.com/in/rfqma",
-      target: "_blank",
+      name: 'LinkedIn',
+      path: 'https://www.linkedin.com/in/rfqma',
+      target: '_blank',
       disabled: false,
       icon: Linkedin,
     },
     {
-      name: "Instagram",
-      path: "https://instagram.com/maruarchive",
-      target: "_blank",
+      name: 'Instagram',
+      path: 'https://instagram.com/maruarchive',
+      target: '_blank',
       disabled: false,
       icon: Instagram,
     },
     {
-      name: "Pexels",
-      path: "https://www.pexels.com/@rifqi-maulana-286675026/",
-      target: "_blank",
+      name: 'Pexels',
+      path: 'https://www.pexels.com/@rifqi-maulana-286675026/',
+      target: '_blank',
       disabled: false,
       icon: CgPexels,
     },
     {
-      name: "YouTube",
-      path: "https://www.youtube.com/@maruarchive",
-      target: "_blank",
+      name: 'YouTube',
+      path: 'https://www.youtube.com/@maruarchive',
+      target: '_blank',
       disabled: false,
       icon: Youtube,
     },
@@ -74,88 +74,88 @@ export default function Home() {
 
   const times: TimeProps[] = [
     {
-      title: "Oetama Solutions",
-      description: "Fullstack Developer",
+      title: 'Oetama Solutions',
+      description: 'Fullstack Developer',
       date: {
-        from: "mar 2024",
-        to: "present",
+        from: 'mar 2024',
+        to: 'present',
       },
-      iconVariant: "PlusIcon",
+      iconVariant: 'PlusIcon',
     },
     {
-      title: "Self Employed",
-      description: "Freelance Fullstack Developer",
+      title: 'Self Employed',
+      description: 'Freelance Fullstack Developer',
       date: {
-        from: "may 2024",
-        to: "present",
+        from: 'may 2024',
+        to: 'present',
       },
-      iconVariant: "PlusIcon",
+      iconVariant: 'PlusIcon',
     },
     {
-      title: "Self Employed",
-      description: "Freelance Photographer & Videographer",
+      title: 'Self Employed',
+      description: 'Freelance Photographer & Videographer',
       date: {
-        from: "jan 2024",
-        to: "present",
+        from: 'jan 2024',
+        to: 'present',
       },
-      iconVariant: "PlusIcon",
+      iconVariant: 'PlusIcon',
     },
     {
-      title: "PT. Angkasa Pura I, Yogyakarta International Airport",
-      description: "Intern at Airport Quality Management Unit",
+      title: 'PT. Angkasa Pura I, Yogyakarta International Airport',
+      description: 'Intern at Airport Quality Management Unit',
       date: {
-        from: "jul 2023",
-        to: "sep 2023",
+        from: 'jul 2023',
+        to: 'sep 2023',
       },
-      iconVariant: "CheckedIcon",
+      iconVariant: 'CheckedIcon',
     },
     {
-      title: "Techave Dev",
-      description: "Front-End Developer",
+      title: 'Techave Dev',
+      description: 'Front-End Developer',
       date: {
-        from: "apr 2023",
-        to: "apr 2023",
+        from: 'apr 2023',
+        to: 'apr 2023',
       },
-      iconVariant: "CheckedIcon",
+      iconVariant: 'CheckedIcon',
     },
     {
-      title: "Mora Studio",
-      description: "Photographer & Videographer",
+      title: 'Mora Studio',
+      description: 'Photographer & Videographer',
       date: {
-        from: "dec 2020",
-        to: "nov 2021",
+        from: 'dec 2020',
+        to: 'nov 2021',
       },
-      iconVariant: "CheckedIcon",
+      iconVariant: 'CheckedIcon',
     },
   ];
 
   const slugs = [
-    "typescript",
-    "javascript",
-    "dart",
-    "react",
-    "flutter",
-    "android",
-    "html5",
-    "css3",
-    "nodedotjs",
-    "express",
-    "nextdotjs",
-    "prisma",
-    "amazonaws",
-    "postgresql",
-    "firebase",
-    "nginx",
-    "vercel",
-    "docker",
-    "git",
-    "github",
-    "gitlab",
-    "visualstudiocode",
-    "androidstudio",
-    "figma",
-    "tailwindcss",
-    "adobepremierepro",
+    'typescript',
+    'javascript',
+    'dart',
+    'react',
+    'flutter',
+    'android',
+    'html5',
+    'css3',
+    'nodedotjs',
+    'express',
+    'nextdotjs',
+    'prisma',
+    'amazonaws',
+    'postgresql',
+    'firebase',
+    'nginx',
+    'vercel',
+    'docker',
+    'git',
+    'github',
+    'gitlab',
+    'visualstudiocode',
+    'androidstudio',
+    'figma',
+    'tailwindcss',
+    'adobepremierepro',
   ];
 
   return (

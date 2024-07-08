@@ -1,21 +1,21 @@
-"use client";
+'use client';
 
-import { motion, type AnimationProps } from "framer-motion";
+import { motion, type AnimationProps } from 'framer-motion';
 
 const animationProps = {
-  initial: { "--x": "100%", scale: 0.8 },
-  animate: { "--x": "-100%", scale: 1 },
+  initial: { '--x': '100%', scale: 0.8 },
+  animate: { '--x': '-100%', scale: 1 },
   whileTap: { scale: 0.95 },
   transition: {
     repeat: Infinity,
-    repeatType: "loop",
+    repeatType: 'loop',
     repeatDelay: 1,
-    type: "spring",
+    type: 'spring',
     stiffness: 20,
     damping: 15,
     mass: 2,
     scale: {
-      type: "spring",
+      type: 'spring',
       stiffness: 200,
       damping: 5,
       mass: 0.5,
@@ -23,7 +23,7 @@ const animationProps = {
   },
 } as AnimationProps;
 
-const ShinyButton = ({ text = "shiny-button" }) => {
+const ShinyButton = ({ text = 'shiny-button' }) => {
   return (
     <motion.button
       {...animationProps}
@@ -33,15 +33,15 @@ const ShinyButton = ({ text = "shiny-button" }) => {
         className="relative block h-full w-full text-sm uppercase tracking-wide text-[rgb(0,0,0,65%)] dark:font-light dark:text-[rgb(255,255,255,90%)]"
         style={{
           maskImage:
-            "linear-gradient(-75deg,hsl(var(--primary)) calc(var(--x) + 20%),transparent 30%),hsl(var(--primary)) 100%))",
+            'linear-gradient(-75deg,hsl(var(--primary)) calc(var(--x) + 20%),transparent 30%),hsl(var(--primary)) 100%))',
         }}
       >
         {text}
       </span>
       <span
         style={{
-          mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box,linear-gradient(rgb(0,0,0),",
-          maskComposite: "exclude",
+          mask: 'linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box,linear-gradient(rgb(0,0,0),',
+          maskComposite: 'exclude',
         }}
         className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
       ></span>

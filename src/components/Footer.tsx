@@ -1,10 +1,10 @@
-import { Link } from "@nextui-org/link";
+import { Link } from '@nextui-org/link';
 
 export default function Footer() {
   return (
     <footer className="flex justify-center w-full p-8 text-base text-center border-t border-t-zinc-100">
       <p>
-        &copy; 2024 Copyright by{" "}
+        &copy; 2024 Copyright by{' '}
         <Link
           href="https://github.com/rfqma"
           target="_blank"
