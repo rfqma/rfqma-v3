@@ -34,7 +34,7 @@ jobs:
         with:
           host: ${{secrets.REMOTE_SSH_HOST}}
           username: ${{secrets.REMOTE_SSH_USER}}
-          password: ${{ secrets.REMOTE_SSH_PW }}
+          key: ${{secrets.REMOTE_SSH_KEY}}
           port: 22
           script: |
             cd ${{ secrets.REMOTE_WORK_DIR }}
