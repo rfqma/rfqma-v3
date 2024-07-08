@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import {
-  Inter,
-  Abel,
-  Rajdhani,
-  Ubuntu_Mono,
-  Space_Mono,
-} from 'next/font/google';
+import { Ubuntu_Mono } from 'next/font/google';
+// import {
+//   Inter,
+//   Abel,
+//   Rajdhani,
+//   Space_Mono,
+// } from 'next/font/google';
 import './globals.css';
 import { NextUIProviders } from '@/utils/providers/next-ui-providers';
 import Header from '@/components/Header';
