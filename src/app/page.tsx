@@ -10,9 +10,6 @@ import BlurIn from '@/components/magicui/blur-in';
 import TypingAnimation from '@/components/magicui/typing-animation';
 import { CoolMode } from '@/components/magicui/cool-mode';
 import { Snippet } from '@nextui-org/snippet';
-import Ripple from '@/components/magicui/ripple';
-import GridPattern from '@/components/magicui/grid-pattern';
-import { cn } from '@/utils/others/cn';
 
 interface TimeProps {
   title: string;
@@ -162,38 +159,18 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center py-24 px-10">
+    <main className="flex z-50 min-h-screen flex-col items-center py-24 px-10">
       <div className="flex flex-col max-w-2xl w-full">
         <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between sm:items-center">
           <CoolMode>
             <Avatar
               src="/images/rifqimaulana-headshot.png"
-              className="w-28 h-28 text-large flex sm:hidden cursor-pointer"
+              className="z-20 w-28 h-28 text-large flex sm:hidden cursor-pointer"
               isBordered
               radius="full"
               color="success"
             />
           </CoolMode>
-          <GridPattern
-            squares={[
-              [4, 4],
-              [5, 1],
-              [8, 2],
-              [5, 3],
-              [5, 5],
-              [10, 10],
-              [12, 15],
-              [15, 10],
-              [10, 15],
-              [15, 10],
-              [10, 15],
-              [15, 10],
-            ]}
-            className={cn(
-              '[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]',
-              'inset-x-0 inset-y-[-30%] h-[200%] skew-y-12'
-            )}
-          />
 
           <div className="flex flex-col">
             <BlurIn
@@ -293,7 +270,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <Ripple />
 
         <div>
           <h2 className="text-2xl font-bold mt-8">experiences</h2>
