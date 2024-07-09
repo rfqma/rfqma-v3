@@ -51,6 +51,18 @@ const config: Config = {
             backgroundPosition: "var(--bg-size) 0",
           },
         },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        ripple: {
+          "0%, 100%": {
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-50%, -50%) scale(0.9)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -58,6 +70,8 @@ const config: Config = {
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
         gradient: "gradient 8s linear infinite",
+        grid: "grid 15s linear infinite",
+        ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
       },
     },
   },

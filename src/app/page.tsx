@@ -10,6 +10,9 @@ import BlurIn from '@/components/magicui/blur-in';
 import TypingAnimation from '@/components/magicui/typing-animation';
 import { CoolMode } from '@/components/magicui/cool-mode';
 import { Snippet } from '@nextui-org/snippet';
+import Ripple from '@/components/magicui/ripple';
+import GridPattern from '@/components/magicui/grid-pattern';
+import { cn } from '@/utils/others/cn';
 
 interface TimeProps {
   title: string;
@@ -171,6 +174,27 @@ export default function Home() {
               color="success"
             />
           </CoolMode>
+          <GridPattern
+            squares={[
+              [4, 4],
+              [5, 1],
+              [8, 2],
+              [5, 3],
+              [5, 5],
+              [10, 10],
+              [12, 15],
+              [15, 10],
+              [10, 15],
+              [15, 10],
+              [10, 15],
+              [15, 10],
+            ]}
+            className={cn(
+              '[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]',
+              'inset-x-0 inset-y-[-30%] h-[200%] skew-y-12'
+            )}
+          />
+
           <div className="flex flex-col">
             <BlurIn
               word="Rifqi Maulana"
@@ -269,6 +293,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <Ripple />
 
         <div>
           <h2 className="text-2xl font-bold mt-8">experiences</h2>
