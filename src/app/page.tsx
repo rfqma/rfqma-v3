@@ -29,8 +29,8 @@ interface TimeProps {
 export default function Home() {
   const socials = [
     {
-      name: 'rifqimaulanax@gmail.com',
-      path: 'https://mail.google.com/mail/?view=cm&fs=1&to=rifqimaulanax@gmail.com',
+      name: 'info@rfqma.xyz',
+      path: 'https://mail.google.com/mail/?view=cm&fs=1&to=info@rfqma.xyz',
       target: '_blank',
       disabled: false,
       icon: Mails,
@@ -74,6 +74,15 @@ export default function Home() {
 
   const times: TimeProps[] = [
     {
+      title: 'PT. Pertamina EP Cepu',
+      description: 'Software Engineer',
+      date: {
+        from: 'aug 2024',
+        to: 'present',
+      },
+      iconVariant: 'PlusIcon',
+    },
+    {
       title: 'Oetama Solutions',
       description: 'Fullstack Developer',
       date: {
@@ -83,26 +92,8 @@ export default function Home() {
       iconVariant: 'PlusIcon',
     },
     {
-      title: 'Self Employed',
-      description: 'Freelance Fullstack Developer',
-      date: {
-        from: 'may 2024',
-        to: 'present',
-      },
-      iconVariant: 'PlusIcon',
-    },
-    {
-      title: 'Self Employed',
-      description: 'Freelance Photographer & Videographer',
-      date: {
-        from: 'jan 2024',
-        to: 'present',
-      },
-      iconVariant: 'PlusIcon',
-    },
-    {
       title: 'PT. Angkasa Pura I, Yogyakarta International Airport',
-      description: 'Intern at Airport Quality Management Unit',
+      description: 'Airport Quality Management Intern Staff',
       date: {
         from: 'jul 2023',
         to: 'sep 2023',
@@ -110,7 +101,7 @@ export default function Home() {
       iconVariant: 'CheckedIcon',
     },
     {
-      title: 'Techave Dev',
+      title: 'Techave.dev',
       description: 'Front-End Developer',
       date: {
         from: 'apr 2023',
@@ -142,7 +133,9 @@ export default function Home() {
     'express',
     'nextdotjs',
     'prisma',
-    'amazonaws',
+    // 'amazonaws',
+    'googlecloud',
+    'mongodb',
     'postgresql',
     'firebase',
     'nginx',
@@ -156,6 +149,23 @@ export default function Home() {
     'figma',
     'tailwindcss',
     'adobepremierepro',
+    'nextui',
+    'nextcloud',
+    'hono',
+    'contabo',
+    'ubuntu',
+    'php',
+    'phpmyadmin',
+    'laravel',
+    'supabase',
+    'mysql',
+    'cloudflare',
+    'cloudinary',
+    'cplusplus',
+    'python',
+    'adobeaftereffects',
+    'davinciresolve',
+    'adobelightroomclassic',
   ];
 
   return (
@@ -180,7 +190,7 @@ export default function Home() {
 
             <TypingAnimation
               className="text-base font-normal text-start"
-              text="CS Student / Fullstack Developer / Photographer"
+              text="CS Student / Fullstack Developer / Photographer / Videographer"
               duration={50}
             />
 
@@ -219,17 +229,20 @@ export default function Home() {
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold mt-8">who am i?</h2>
           <p className="mt-4">
-            I&apos;m a 21 years old who passionate about photography,
-            videography, and computer related stuff. I am an ambitious student
-            pursuing a degree on computer science at Universitas Pembangunan
-            Nasional Veteran Yogyakarta. Alongside my studies, I actively engage
-            in freelance work, utilizing my skills and creativity to capture
-            unforgettable moments through photography and videography. With a
-            strong technical background and a deep appreciation for visual
-            storytelling, I bring a unique blend of expertise to every project.
-            Combining my passion for technology and the arts, I am dedicated to
-            delivering exceptional visual content that resonates with audiences.
-            Let&apos;s connect and explore the power of visuals together.
+            I&#39;m an undergraduate Computer Science student based in
+            Yogyakarta, Indonesia, where I excel in problem-solving, critical
+            thinking, and adaptability in navigating new environments and
+            processes. Alongside my studies, I freelance in web and mobile
+            development, applying my skills and creativity to create innovative
+            solutions.
+          </p>
+          <p className="mt-2">
+            In addition to my tech work, I have a passion for photography and
+            videography, which I pursue as a hobby and a way to generate income.
+            This creative outlet enhances my ability to tell compelling stories
+            through digital media. I am dedicated to delivering high-quality
+            content that resonates with audiences while focusing on my core
+            expertise in computer science.
           </p>
         </div>
 
@@ -283,7 +296,8 @@ export default function Home() {
 
         <div>
           <h2 className="text-2xl font-bold mt-8">skills</h2>
-          <span>tools or technologies i usually use</span>
+          {/* <span>tools or technologies i usually use</span> */}
+          <span>tools or technologies i&#39;ve been working with</span>
           <div className="relative flex h-full w-full max-w-4xl items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
             <IconCloud iconSlugs={slugs} />
           </div>
