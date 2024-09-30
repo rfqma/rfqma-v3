@@ -38,7 +38,7 @@ export default function Header() {
       label: 'blog',
       path: 'https://blog.rfqma.xyz',
       target: '_blank',
-      disabled: true,
+      disabled: false,
     },
   ];
 
