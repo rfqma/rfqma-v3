@@ -36,6 +36,13 @@ export default function Home() {
       icon: Mails,
     },
     {
+      name: 'rifqimaulanax@gmail.com',
+      path: 'https://mail.google.com/mail/?view=cm&fs=1&to=rifqimaulanax@gmail.com',
+      target: '_blank',
+      disabled: false,
+      icon: Mails,
+    },
+    {
       name: 'GitHub',
       path: 'https://github.com/rfqma',
       target: '_blank',
