@@ -78,13 +78,13 @@ export default function Home() {
       description: 'Software Engineer',
       date: {
         from: 'aug 2024',
-        to: 'present',
+        to: 'nov 2024',
       },
-      iconVariant: 'PlusIcon',
+      iconVariant: 'CheckedIcon',
     },
     {
       title: 'Oetama Solutions',
-      description: 'Fullstack Developer',
+      description: 'Software Engineer',
       date: {
         from: 'mar 2024',
         to: 'present',
@@ -102,16 +102,16 @@ export default function Home() {
     },
     {
       title: 'Techave.dev',
-      description: 'Front-End Developer',
+      description: 'Front End Developer',
       date: {
         from: 'apr 2023',
-        to: 'apr 2023',
+        to: 'may 2023',
       },
       iconVariant: 'CheckedIcon',
     },
     {
       title: 'Mora Studio',
-      description: 'Photographer & Videographer',
+      description: 'Videographer',
       date: {
         from: 'dec 2020',
         to: 'nov 2021',

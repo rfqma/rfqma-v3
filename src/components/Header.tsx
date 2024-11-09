@@ -40,6 +40,12 @@ export default function Header() {
       target: '_blank',
       disabled: false,
     },
+    {
+      label: 'gallery',
+      path: 'https://gallery.rfqma.xyz',
+      target: '_blank',
+      disabled: false,
+    },
   ];
 
   return (
@@ -76,7 +82,7 @@ export default function Header() {
                     radius="full"
                     variant="shadow"
                   >
-                    coming soon
+                    upcoming
                   </Chip>
                 </div>
               ) : (
@@ -101,7 +107,7 @@ export default function Header() {
         </NavbarItem> */}
         <NavbarItem>
           <Link
-            href="https://cloud.rfqma.xyz/s/6CZWQLmxxdKLrwf"
+            href="https://cloud.rfqma.xyz/s/5GdkjjR4LjXpcoZ"
             target="_blank"
           >
             <ShimmerButton className="shadow-2xl" shimmerSize="0.1em">
@@ -135,7 +141,7 @@ export default function Header() {
                     radius="full"
                     variant="shadow"
                   >
-                    coming soon
+                    upcoming
                   </Chip>
                 </div>
               ) : (
