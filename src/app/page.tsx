@@ -84,7 +84,7 @@ export default function Home() {
       title: 'PT. Pertamina EP Cepu',
       description: 'Software Engineer',
       date: {
-        from: 'aug 2024',
+        from: 'jun 2024',
         to: 'nov 2024',
       },
       iconVariant: 'CheckedIcon',
