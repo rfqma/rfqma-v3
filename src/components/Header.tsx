@@ -27,18 +27,18 @@ export default function Header() {
       target: "_self",
       disabled: false,
     },
-    {
-      label: "projects",
-      path: "/projects",
-      target: "_self",
-      disabled: true,
-    },
-    {
-      label: "blog",
-      path: "https://blog.rfqma.xyz",
-      target: "_blank",
-      disabled: false,
-    },
+    // {
+    //   label: "projects",
+    //   path: "/projects",
+    //   target: "_self",
+    //   disabled: true,
+    // },
+    // {
+    //   label: "blog",
+    //   path: "https://blog.rfqma.xyz",
+    //   target: "_blank",
+    //   disabled: false,
+    // },
     {
       label: "gallery",
       path: "https://gallery.rfqma.xyz",
