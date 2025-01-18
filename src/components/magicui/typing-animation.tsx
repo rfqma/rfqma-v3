@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import { cn } from '@/utils/others/cn';
+import { cn } from "@/utils/cn";
 
 interface TypingAnimationProps {
   text: string;
@@ -15,7 +15,7 @@ export default function TypingAnimation({
   duration = 200,
   className,
 }: TypingAnimationProps) {
-  const [displayedText, setDisplayedText] = useState<string>('');
+  const [displayedText, setDisplayedText] = useState<string>("");
   const [i, setI] = useState<number>(0);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function TypingAnimation({
   return (
     <h1
       className={cn(
-        'font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm',
+        "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
         className
       )}
     >

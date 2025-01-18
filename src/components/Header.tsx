@@ -1,7 +1,6 @@
-'use client';
+"use client";
 
-// import { AcmeLogo } from "./Logos/AcmeLogo";
-import { MaruArchiveLogo } from './Logos/MaruArchiveLogo';
+import { MaruArchiveLogo } from "./logos/maru-archive";
 import {
   Navbar,
   NavbarBrand,
@@ -10,12 +9,12 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-} from '@nextui-org/navbar';
-import { Link } from '@nextui-org/link';
-import { useState } from 'react';
-import { usePathname } from 'next/navigation';
-import { Chip } from '@nextui-org/chip';
-import ShimmerButton from '@/components/magicui/shimmer-button';
+} from "@nextui-org/navbar";
+import { Link } from "@nextui-org/link";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { Chip } from "@nextui-org/chip";
+import ShimmerButton from "@/components/magicui/shimmer-button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -23,27 +22,27 @@ export default function Header() {
 
   const menuItems = [
     {
-      label: 'home',
-      path: '/',
-      target: '_self',
+      label: "home",
+      path: "/",
+      target: "_self",
       disabled: false,
     },
     {
-      label: 'projects',
-      path: '/projects',
-      target: '_self',
+      label: "projects",
+      path: "/projects",
+      target: "_self",
       disabled: true,
     },
     {
-      label: 'blog',
-      path: 'https://blog.rfqma.xyz',
-      target: '_blank',
+      label: "blog",
+      path: "https://blog.rfqma.xyz",
+      target: "_blank",
       disabled: false,
     },
     {
-      label: 'gallery',
-      path: 'https://gallery.rfqma.xyz',
-      target: '_blank',
+      label: "gallery",
+      path: "https://gallery.rfqma.xyz",
+      target: "_blank",
       disabled: false,
     },
   ];
@@ -52,7 +51,7 @@ export default function Header() {
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand className="gap-2">
@@ -68,7 +67,7 @@ export default function Header() {
             key={`${item.label}-${index}`}
           >
             <Link
-              color={pathname === item.path ? 'secondary' : 'foreground'}
+              color={pathname === item.path ? "secondary" : "foreground"}
               href={item.path}
               target={item.target}
               isDisabled={item.disabled}
@@ -106,10 +105,7 @@ export default function Header() {
           </Button>
         </NavbarItem> */}
         <NavbarItem>
-          <Link
-            href="https://nc.rfqma.xyz/s/3ewrPXjxAWtmzmZ"
-            target="_blank"
-          >
+          <Link href="https://nc.rfqma.xyz/s/3ewrPXjxAWtmzmZ" target="_blank">
             <ShimmerButton className="shadow-2xl" shimmerSize="0.1em">
               <span className="whitespace-pre-wrap text-center text-base font-normal leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10">
                 resume
@@ -125,7 +121,7 @@ export default function Header() {
             key={`${item}-${index}`}
           >
             <Link
-              color={pathname === item.path ? 'secondary' : 'foreground'}
+              color={pathname === item.path ? "secondary" : "foreground"}
               className="w-full"
               href={item.path}
               target={item.target}
