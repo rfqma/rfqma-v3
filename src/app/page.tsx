@@ -81,6 +81,15 @@ export default function Home() {
 
   const times: TimeProps[] = [
     {
+      title: 'Techave',
+      description: 'Front End Developer',
+      date: {
+        from: 'jan 2025',
+        to: 'present',
+      },
+      iconVariant: 'PlusIcon',
+    },
+    {
       title: 'PT. Pertamina EP Cepu',
       description: 'Software Engineer',
       date: {
@@ -88,15 +97,6 @@ export default function Home() {
         to: 'nov 2024',
       },
       iconVariant: 'CheckedIcon',
-    },
-    {
-      title: 'Oetama Solutions',
-      description: 'Software Engineer',
-      date: {
-        from: 'mar 2024',
-        to: 'present',
-      },
-      iconVariant: 'PlusIcon',
     },
     {
       title: 'PT. Angkasa Pura I, Yogyakarta International Airport',
@@ -108,7 +108,7 @@ export default function Home() {
       iconVariant: 'CheckedIcon',
     },
     {
-      title: 'Techave.dev',
+      title: 'Techave',
       description: 'Front End Developer',
       date: {
         from: 'apr 2023',
