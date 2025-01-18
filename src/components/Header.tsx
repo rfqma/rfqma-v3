@@ -107,7 +107,7 @@ export default function Header() {
         </NavbarItem> */}
         <NavbarItem>
           <Link
-            href="https://cloud.rfqma.xyz/s/5GdkjjR4LjXpcoZ"
+            href="https://nc.rfqma.xyz/s/3ewrPXjxAWtmzmZ"
             target="_blank"
           >
             <ShimmerButton className="shadow-2xl" shimmerSize="0.1em">
