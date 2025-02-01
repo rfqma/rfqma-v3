@@ -236,20 +236,17 @@ export default function Home() {
         <div className="flex flex-col">
           <h2 className="text-2xl font-bold mt-8">who am i?</h2>
           <p className="mt-4">
-            I&#39;m an undergraduate Computer Science student based in
-            Yogyakarta, Indonesia, where I excel in problem-solving, critical
-            thinking, and adaptability in navigating new environments and
-            processes. Alongside my studies, I freelance in web and mobile
-            development, applying my skills and creativity to create innovative
-            solutions.
+            I am a recent Computer Science graduate based in Yogyakarta,
+            Indonesia, where I honed my skills in problem-solving, critical thinking, and adaptability in navigating new
+            environments and processes. During my studies, I freelanced in web and mobile development,
+            applying my technical expertise and creativity to craft innovative solutions.
           </p>
           <p className="mt-2">
-            In addition to my tech work, I have a passion for photography and
-            videography, which I pursue as a hobby and a way to generate income.
-            This creative outlet enhances my ability to tell compelling stories
-            through digital media. I am dedicated to delivering high-quality
-            content that resonates with audiences while focusing on my core
-            expertise in computer science.
+            Beyond my technical work, I have a passion for photography and videography, which I pursue
+            both as a hobby and a side source of income. This creative outlet has enhanced my ability
+            to tell compelling stories through digital media, complementing my technical background. I
+            am committed to delivering high-quality content that resonates with audiences while
+            continuing to grow in my core expertise in computer science.
           </p>
         </div>
 
