@@ -197,7 +197,7 @@ export default function Home() {
 
             <TypingAnimation
               className="text-base font-normal text-start"
-              text="CS Student / Fullstack Developer / Photographer / Videographer"
+              text="Fullstack Developer / Photographer / Videographer"
               duration={50}
             />
 
