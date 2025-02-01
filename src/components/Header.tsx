@@ -48,7 +48,7 @@ export default function Header() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpehange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -105,7 +105,7 @@ export default function Header() {
           </Button>
         </NavbarItem> */}
         <NavbarItem>
-          <Link href="https://nc.rfqma.xyz/s/d9E6cBZ9r5ctzta" target="_blank">
+          <Link href="https://nc.rfqma.xyz/s/cC67ZpcEbmgtgzB" target="_blank">
             <ShimmerButton className="shadow-2xl" shimmerSize="0.1em">
               <span className="whitespace-pre-wrap text-center text-base font-normal leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10">
                 resume
