@@ -48,7 +48,7 @@ export default function Header() {
   ];
 
   return (
-    <Navbar onMenuOpehange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
