@@ -41,7 +41,7 @@ export default function Header() {
     // },
     {
       label: "gallery",
-      path: "https://gallery.rfqma.xyz",
+      path: "https://gallery.rfqm.xyz",
       target: "_blank",
       disabled: false,
     },
@@ -105,7 +105,7 @@ export default function Header() {
           </Button>
         </NavbarItem> */}
         <NavbarItem>
-          <Link href="https://nc.rfqma.xyz/s/cC67ZpcEbmgtgzB" target="_blank">
+          <Link href="https://nc.rfqm.xyz/s/EsAWsfzFf65iQia" target="_blank">
             <ShimmerButton className="shadow-2xl" shimmerSize="0.1em">
               <span className="whitespace-pre-wrap text-center text-base font-normal leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10">
                 resume

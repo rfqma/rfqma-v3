@@ -12,7 +12,7 @@ const ubuntuMono = Ubuntu_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rfqma.xyz"),
+  metadataBase: new URL("https://rfqm.xyz"),
   alternates: {
     canonical: "/",
   },
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   keywords: [
     "rfqma",
+    "rfqm",
     "abel",
     "rifqi maulana",
     "fullstack",
